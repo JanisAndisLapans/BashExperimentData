@@ -1,0 +1,1 @@
+echo "exit code: $(systemctl show -p ExitCode myservice | cut -d '=' -f 2)"

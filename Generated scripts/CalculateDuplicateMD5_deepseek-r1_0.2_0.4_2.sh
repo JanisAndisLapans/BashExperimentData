@@ -1,0 +1,1 @@
+find /usr/code -maxdepth 1 -type f -name '*.py' -exec md5sum {} + | sort | awk 'seen[$1]++' | cut -d' ' -f3- | xargs -I{} grep " {}" <(find /usr/code -maxdepth 1 -type f -name '*.py' -exec md5sum {} +)

@@ -1,0 +1,1 @@
+python3 -c 'import math; print(math.factorial(623))'

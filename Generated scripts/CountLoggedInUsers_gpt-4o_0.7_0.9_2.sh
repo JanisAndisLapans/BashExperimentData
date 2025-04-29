@@ -1,0 +1,1 @@
+who | grep -E -v '^$' | wc -l

@@ -1,0 +1,1 @@
+join -j 1 <(sort GHJ1.txt) <(sort GHJ2.txt) | (read -r line; [[ $line =~ ^Exe ]] && echo "$line"; join -j 1 <(sort GHJ1.txt) <(sort GHJ2.txt) | grep -v "^Exe")

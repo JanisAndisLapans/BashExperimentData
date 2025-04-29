@@ -1,0 +1,1 @@
+find /usr/files -type f -print0 | xargs -0 md5sum | sort | uniq -w 32 -d | awk '{print $2}' | tr '\n' ' '

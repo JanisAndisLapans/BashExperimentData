@@ -1,0 +1,1 @@
+journalctl --since today -u sshd -u login --no-pager | grep -E "Failed password|authentication failure" | awk -F'=' '/user=/ {print $2}' | awk '{print $1}' | sort | uniq -c | awk '$1 >= 3' | wc -l | awk '{print "Users: " $1}'

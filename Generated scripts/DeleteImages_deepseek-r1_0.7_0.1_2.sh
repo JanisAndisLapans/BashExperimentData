@@ -1,0 +1,1 @@
+find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.bmp" -o -iname "*.tiff" -o -iname "*.svg" -o -iname "*.webp" -o -iname "*.apng" \) -exec rm {} +

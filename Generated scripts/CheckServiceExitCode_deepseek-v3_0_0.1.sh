@@ -1,0 +1,1 @@
+systemctl show myservice --property=ExecMainStatus --no-pager | awk -F= '{print "exit code: " $2}'

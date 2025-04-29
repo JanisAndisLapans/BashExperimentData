@@ -1,0 +1,1 @@
+ssh -C "$1" "MYSQL_PWD=TEST mysqldump -u TEST_USER --add-drop-table --routines --triggers --single-transaction TEST_DB" | MYSQL_PWD=TEST mysql -u TEST_USER TEST_DB

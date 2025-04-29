@@ -1,0 +1,1 @@
+eval "$(grep -E -- '^USERNAME=' .env)" && echo "$USERNAME"

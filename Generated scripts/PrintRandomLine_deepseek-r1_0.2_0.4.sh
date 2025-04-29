@@ -1,0 +1,1 @@
+od -vAn -N75 -tu1 /dev/urandom | awk '{for(i=1;i<=NF;i++)printf $i%2}END{print""}'

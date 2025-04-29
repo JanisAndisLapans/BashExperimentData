@@ -1,0 +1,1 @@
+grep "authentication failure" /var/log/auth.log* | awk '{print $9}' | sort | uniq -c | awk '$1 >= 3' | wc -l | awk '{print "Users: " $1}'

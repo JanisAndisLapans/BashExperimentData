@@ -1,0 +1,1 @@
+find /usr/files -type f -printf '%i %p\n' | sort | uniq -D -w1 | cut -d' ' -f2- | xargs -I{} md5sum "{}" | sort | uniq -w32 --all-repeated=separate | awk '{print $2}' | xargs -I{} find /usr/files -samefile "{}" -printf '%p ' | sed 's/ $/\n/'

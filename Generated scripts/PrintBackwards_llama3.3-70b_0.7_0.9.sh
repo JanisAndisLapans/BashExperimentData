@@ -1,0 +1,1 @@
+rev info.txt | while read -r line; do echo "result = $line"; done

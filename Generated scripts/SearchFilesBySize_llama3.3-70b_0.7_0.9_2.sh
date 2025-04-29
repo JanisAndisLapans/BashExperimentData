@@ -1,0 +1,1 @@
+find /usr/lib -type f -size +3072c -size -9216c

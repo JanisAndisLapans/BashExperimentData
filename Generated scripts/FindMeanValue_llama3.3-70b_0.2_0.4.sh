@@ -1,0 +1,1 @@
+awk -v FS=, 'NR>1 {sum+=$4; count++} END {print "Mean: " sum/count}' products.csv

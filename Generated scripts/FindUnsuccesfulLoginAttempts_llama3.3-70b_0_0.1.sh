@@ -1,0 +1,1 @@
+echo "Users: $(grep "authentication failure" /var/log/auth.log | grep $(date +"%b %d") | awk '{print $3}' | sort | uniq -d | awk '{a[$1]++} END {for (i in a) if (a[i] >= 3) print i}' | wc -l)"

@@ -1,0 +1,1 @@
+find /usr/files -type f -exec md5sum {} \; | sort | uniq -w 32 -d | awk '{print $2}' | xargs -I {} find /usr/files -type f -exec md5sum {} \; | grep $(md5sum {} | cut -d' ' -f1) | cut -d' ' -f2- | tr '\n' ' '

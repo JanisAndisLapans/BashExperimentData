@@ -1,0 +1,1 @@
+echo "exit code: $(systemctl show myservice -p ExecMainStatus --value)"

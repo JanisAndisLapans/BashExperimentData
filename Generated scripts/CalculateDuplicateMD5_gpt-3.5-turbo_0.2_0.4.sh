@@ -1,0 +1,1 @@
+find /usr/code -type f -name "*.py" -exec md5sum {} + | sort | uniq -d -w 32 | cut -c 1-32

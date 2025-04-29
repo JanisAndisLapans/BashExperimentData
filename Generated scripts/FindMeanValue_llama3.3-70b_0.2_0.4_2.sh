@@ -1,0 +1,1 @@
+awk -v FS=, '{if(NR>1) sum+=$4; if(NR>1) count++} END {printf "Mean: %.2f\n", sum/count}' products.csv

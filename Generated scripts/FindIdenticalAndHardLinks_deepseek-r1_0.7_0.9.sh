@@ -1,0 +1,1 @@
+fdupes -r /usr/files | awk -v RS= '{$1=$1}1' OFS=' '

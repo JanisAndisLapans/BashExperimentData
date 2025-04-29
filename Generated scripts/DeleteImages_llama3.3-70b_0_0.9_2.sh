@@ -1,0 +1,1 @@
+find . -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.apng" -o -name "*.gif" -o -name "*.bmp" -o -name "*.tiff" -o -name "*.tif" -o -name "*.svg" \) -delete

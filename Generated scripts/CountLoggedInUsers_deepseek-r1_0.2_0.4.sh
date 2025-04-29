@@ -1,0 +1,1 @@
+users | tr ' ' '\n' | sort -u | wc -l

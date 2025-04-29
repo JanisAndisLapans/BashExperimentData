@@ -1,0 +1,1 @@
+git pull -s recursive -X ours origin develop

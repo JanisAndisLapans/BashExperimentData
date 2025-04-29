@@ -1,0 +1,1 @@
+sed -i -e :a -e '$d;N;2,5ba' -e 'P;D' data.md

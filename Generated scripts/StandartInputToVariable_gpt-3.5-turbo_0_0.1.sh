@@ -1,0 +1,1 @@
+text=$(awk '{ if ($0 ~ /%/) { exit } else { print } }')

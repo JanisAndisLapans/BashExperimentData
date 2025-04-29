@@ -1,0 +1,1 @@
+find /usr/code -type f -name "*.py" -exec md5sum {} + | sort | awk '{count[$1]++; lines[$1]=lines[$1] $2 "\n"} END {for (md5 in count) if (count[md5] > 1) printf "%s\n%s", md5, lines[md5]}'

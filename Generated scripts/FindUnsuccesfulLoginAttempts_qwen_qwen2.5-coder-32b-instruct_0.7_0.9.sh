@@ -1,0 +1,1 @@
+awk '/Failed password/ && $1 == "$(date +"%b")" && $2 == "$(date +"%d")" {print $9}' /var/log/auth.log | sort | uniq -c | awk '$1 >= 3 {count++} END {print "Users: " count}'

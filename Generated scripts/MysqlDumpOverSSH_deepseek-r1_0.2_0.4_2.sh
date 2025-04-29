@@ -1,0 +1,1 @@
+ssh -C root@"$1" "MYSQL_PWD=TEST mysqldump -u TEST_USER --no-tablespaces TEST_DB" | MYSQL_PWD=TEST mysql -u TEST_USER TEST_DB -q

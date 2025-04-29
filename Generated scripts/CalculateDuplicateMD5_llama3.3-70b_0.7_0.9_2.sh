@@ -1,0 +1,1 @@
+find /usr/code -maxdepth 1 -type f -name "*.py" -exec md5sum {} + | sort | uniq -w 32 --all-repeated=prefix

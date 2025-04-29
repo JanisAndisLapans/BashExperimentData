@@ -1,0 +1,1 @@
+seq 623 | paste -sd '*' | bc

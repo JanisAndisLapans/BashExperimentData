@@ -1,0 +1,2 @@
+users=$(awk -v date="$(date +"%b %d")" '/failed password for|authentication failure|invalid user/ && $0 ~ date {print $NF}' /var/log/auth.log | sort | uniq -c | awk '$1 >= 3 {print $2}' | wc -l)
+echo "Users: $users"

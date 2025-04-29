@@ -1,0 +1,1 @@
+journalctl --since today | grep -aEi 'authentication failure|Failed password|authentication error|FAILED SU' | grep -oP '(Failed password for (?:invalid user )?\K\S+|user=\K\S+|sudo:.*?\K\buser\b=([^ ]+)|sudo:\s*\K\S+(?=.*auth)|FAILED SU.*?\K\S+$)' | sort | uniq -c | awk '$1 >=3 {count++} END {printf "Users: %d\n", count}'

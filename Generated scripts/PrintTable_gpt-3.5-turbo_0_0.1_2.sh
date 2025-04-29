@@ -1,0 +1,1 @@
+awk 'NR==FNR{a[$1]=$0; next} {print $1 in a ? a[$1] : "Exe" $0}' GHJ1.txt GHJ2.txt

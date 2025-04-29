@@ -1,0 +1,1 @@
+grep -rlZ "FAIL" /usr/results/ | grep -z "result.log$" | tr '\0' '\n' | grep -c "result.log$"

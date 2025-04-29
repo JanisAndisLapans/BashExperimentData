@@ -1,0 +1,1 @@
+journalctl _SYSTEMD_UNIT=myservice.service _PID=1 --no-pager -n 1 -o cat -q | grep -oP 'Exit code: \K\d+'

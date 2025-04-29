@@ -1,0 +1,1 @@
+find /usr/library -type f -size +3k -size -9k

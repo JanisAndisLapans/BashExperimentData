@@ -1,0 +1,1 @@
+find /usr/files -type f -exec md5sum {} + | sort | uniq -d -w32 | cut -c35- | xargs -n1 md5sum | sort | uniq -Dw32 | cut -c35-

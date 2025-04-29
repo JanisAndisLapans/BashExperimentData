@@ -1,0 +1,3 @@
+source .env
+USERNAME=${USERNAME}
+echo $USERNAME

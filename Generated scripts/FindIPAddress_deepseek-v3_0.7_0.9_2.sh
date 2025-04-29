@@ -1,0 +1,2 @@
+ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}(?=\/)' | grep -v '127.0.0.1' | head -n 1 | awk '{print "IP: " $1}'
+ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}(?=\/)' | head -n 1 | awk '{print "IP: " $1}'

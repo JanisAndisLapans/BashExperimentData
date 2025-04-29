@@ -1,0 +1,1 @@
+find /usr/files -type f -name "*.txt" -exec wc -l {} \; | awk '{total += $1} END {print total}'

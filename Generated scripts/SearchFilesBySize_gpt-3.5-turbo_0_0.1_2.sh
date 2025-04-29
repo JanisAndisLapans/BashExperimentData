@@ -1,0 +1,1 @@
+find /usr/lib -type f -size +3k -size -9k -exec ls -l {} +

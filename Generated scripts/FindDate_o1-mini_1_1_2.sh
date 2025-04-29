@@ -1,0 +1,1 @@
+date -d "2013-05-01 next Monday" +"%Y-%m-%d"

@@ -1,0 +1,1 @@
+trivy fs --severity HIGH . | awk '/VULNERABILITY/{flag=1; next} /SUMMARY/{flag=0} flag' | grep -oP '(?<=\s)\w+(?=\sHIGH)' | tr '\n' ' ' | sed 's/^/Here are the vulnerabilities: /;s/$/\n/' || echo "The project is clean"

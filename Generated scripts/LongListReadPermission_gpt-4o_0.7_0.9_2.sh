@@ -1,0 +1,1 @@
+find . -maxdepth 1 -type f -perm -400 -ls

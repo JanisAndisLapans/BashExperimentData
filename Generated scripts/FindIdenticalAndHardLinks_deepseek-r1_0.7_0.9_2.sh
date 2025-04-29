@@ -1,0 +1,1 @@
+fdupes -rq /usr/files | awk -v RS= '{gsub(/\n/, " ")} NR>1 {print ""} {printf "%s", $0} END {print ""}'

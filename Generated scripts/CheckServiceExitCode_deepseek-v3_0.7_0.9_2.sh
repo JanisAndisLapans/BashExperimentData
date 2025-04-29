@@ -1,0 +1,1 @@
+systemctl show myservice.service -p Result --value | awk '{print "exit code: " substr($1, 8)}'

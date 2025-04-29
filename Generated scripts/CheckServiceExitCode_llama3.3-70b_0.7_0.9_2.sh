@@ -1,0 +1,1 @@
+systemctl show myservice -p ExitStatus | awk -F '=' '{print "exit code: " $2}'

@@ -1,0 +1,1 @@
+git ls-files --others -z --exclude-standard | xargs -0 rm

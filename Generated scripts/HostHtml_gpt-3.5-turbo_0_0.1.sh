@@ -1,0 +1,7 @@
+apt update
+apt install nginx
+
+echo "Hello, World!" > /usr/share/nginx/html/index.html
+
+systemctl start nginx
+systemctl enable nginx

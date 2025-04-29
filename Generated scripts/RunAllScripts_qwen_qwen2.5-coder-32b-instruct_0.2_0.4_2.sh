@@ -1,0 +1,11 @@
+for script in *.sh; do
+    if [ -f "$script" ]; then
+        if bash "$script"; then
+            echo "$script: OK"
+        else
+            echo "$script: FAIL"
+        fi
+    else
+        echo "$script: NOT FOUND"
+    fi
+done

@@ -1,0 +1,1 @@
+text=$(awk '/%/{exit} {print}' /dev/stdin)

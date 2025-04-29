@@ -1,0 +1,1 @@
+awk '/authentication failure/ && /'$(date '+%b %e')'/ {print $NF}' /var/log/auth.log | sort | uniq -c | awk '$1 >= 3 {count++} END {print "Users:", count}'

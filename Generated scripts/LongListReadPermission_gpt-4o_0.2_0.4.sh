@@ -1,0 +1,1 @@
+ls -l | awk '/^-r/ {print $0}'

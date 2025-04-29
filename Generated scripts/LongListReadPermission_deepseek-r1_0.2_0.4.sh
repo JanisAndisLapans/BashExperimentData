@@ -1,0 +1,1 @@
+find . -maxdepth 1 -perm -u+r ! -name '.' -exec ls -ld {} +

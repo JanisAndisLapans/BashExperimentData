@@ -1,0 +1,1 @@
+find /usr/info -maxdepth 1 -type f -newermt "$(date -d '3 weeks ago' +%Y-%m-%d)" ! -newermt "$(date -d '3 weeks ago + 1 day' +%Y-%m-%d)"

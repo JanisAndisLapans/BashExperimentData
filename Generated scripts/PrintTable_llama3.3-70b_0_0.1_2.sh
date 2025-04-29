@@ -1,0 +1,1 @@
+join -a 1 -a 2 -e "None" -o auto <(sort GHJ1.txt) <(sort GHJ2.txt) | (read -r line; echo "$line"; grep -v "^$line" <(join -a 1 -a 2 -e "None" -o auto <(sort GHJ1.txt) <(sort GHJ2.txt))) | column -t

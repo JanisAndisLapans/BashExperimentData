@@ -1,0 +1,1 @@
+find /usr/info -maxdepth 1 -type f -mtime +20 -mtime -22

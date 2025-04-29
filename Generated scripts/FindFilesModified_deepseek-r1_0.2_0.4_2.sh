@@ -1,0 +1,1 @@
+find /usr/info -type f -mtime +20 -mtime -21

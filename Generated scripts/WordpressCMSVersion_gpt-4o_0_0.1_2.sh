@@ -1,0 +1,1 @@
+find /home -type f -path '*/public_html/wp-includes/version.php' -exec grep -H "\$wp_version =" {} \; | awk -F"'" '{print "Found: " $2}'

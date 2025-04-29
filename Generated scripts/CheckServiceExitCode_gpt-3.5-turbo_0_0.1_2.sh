@@ -1,0 +1,1 @@
+journalctl -u myservice --no-pager --output=json | jq -r 'if has("EXIT_STATUS") then .EXIT_STATUS else "" end' | sed 's/^/exit code: /'

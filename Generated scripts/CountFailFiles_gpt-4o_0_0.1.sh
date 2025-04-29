@@ -1,0 +1,1 @@
+grep -rl "FAIL" /usr/results --include="result.log" | wc -l

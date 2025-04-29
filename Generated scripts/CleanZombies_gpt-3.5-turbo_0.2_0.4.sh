@@ -1,0 +1,1 @@
+pkill -KILL -P 1

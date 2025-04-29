@@ -1,0 +1,1 @@
+ip -4 addr show scope global | grep inet | awk '{print "IP: " $2}' | cut -d/ -f1

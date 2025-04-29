@@ -1,0 +1,1 @@
+find /usr/src -maxdepth 1 -type f -name '*.java' -exec ln -s -t . {} +

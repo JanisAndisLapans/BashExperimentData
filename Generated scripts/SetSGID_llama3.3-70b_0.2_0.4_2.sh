@@ -1,0 +1,1 @@
+find "$1/.sn" -type d -not -path "$1/.sn" -exec chmod g+s {} \;

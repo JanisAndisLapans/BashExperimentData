@@ -1,0 +1,1 @@
+find /usr/results -type f -name 'result.log' -print0 | xargs -0 grep -l 'FAIL' | wc -l

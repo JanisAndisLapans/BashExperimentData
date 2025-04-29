@@ -1,0 +1,1 @@
+sed -i '/^[[:space:]]*[^#]/ s/^\([^#]\)/#\1/' settings.env

@@ -1,0 +1,3 @@
+awk 'NR==FNR{a[$1]=$0; next} {print $0, a[$1]}' GHJ1.txt GHJ2.txt > temp.txt
+awk 'NR==FNR{a[$1]=$0; next} {print $0, a[$1]}' GHJ2.txt GHJ1.txt | grep -v -f temp.txt | awk '{ if ($2 == "Exe") print $2, $1, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20; else print $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20; }'
+rm temp.txt

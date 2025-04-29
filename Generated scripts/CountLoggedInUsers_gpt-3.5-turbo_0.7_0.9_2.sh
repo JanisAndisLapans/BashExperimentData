@@ -1,0 +1,1 @@
+who | grep -v pts | wc -l

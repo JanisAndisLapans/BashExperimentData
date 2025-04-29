@@ -1,0 +1,1 @@
+awk -v FPAT='^|,[^,]*|"$[^"]*$"' 'NR>1 { sum+=$4 } END { print "Mean: " sum / (NR-1) }' products.csv

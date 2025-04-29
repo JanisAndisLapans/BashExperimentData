@@ -1,0 +1,1 @@
+for ((i=0; i<75; i++)); do echo -n $((RANDOM%2)); done; echo

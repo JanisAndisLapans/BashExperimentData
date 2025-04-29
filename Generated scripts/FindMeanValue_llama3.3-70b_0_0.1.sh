@@ -1,0 +1,1 @@
+awk -v FS=, '$1~/^[0-9]+$/ {sum+=$2; count++} END {print "Mean: " sum/count}' products.csv

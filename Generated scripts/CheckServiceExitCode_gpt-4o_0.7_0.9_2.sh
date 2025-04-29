@@ -1,0 +1,1 @@
+journalctl -u myservice --no-pager -n 1 | grep -oP 'status=\K\d+' | tail -n 1 | xargs -I {} echo "exit code: {}"

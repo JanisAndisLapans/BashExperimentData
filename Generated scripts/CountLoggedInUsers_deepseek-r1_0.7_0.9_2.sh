@@ -1,0 +1,1 @@
+w -hs | awk '{print $1}' | sort -u | wc -l

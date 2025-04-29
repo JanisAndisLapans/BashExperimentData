@@ -1,0 +1,1 @@
+awk 'NR==FNR{a[$1]=$0;next} {if($1 in a) print a[$1],$0}' GHJ1.txt GHJ2.txt | awk 'NR==1{print $0} NR>1{if($1=="Exe") {print $0} else {print $2,$3,$4,$5,$6,$7,$8,$9,$10,$11}}'

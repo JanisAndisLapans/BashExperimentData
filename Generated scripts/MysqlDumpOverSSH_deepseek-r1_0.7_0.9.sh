@@ -1,0 +1,1 @@
+ssh -C "$1" "mysqldump -u TEST_USER -pTEST TEST_DB" | mysql -u TEST_USER -pTEST TEST_DB

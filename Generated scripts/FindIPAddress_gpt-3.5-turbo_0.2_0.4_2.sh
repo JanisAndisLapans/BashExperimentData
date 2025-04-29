@@ -1,0 +1,1 @@
+ip -4 -o addr show "$(ip route | awk '/default/ {print $5}')" | awk '{print "IP: " $4}' | awk '{print $2}'

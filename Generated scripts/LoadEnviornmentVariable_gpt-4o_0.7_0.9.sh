@@ -1,0 +1,1 @@
+export USERNAME=$(grep -w USERNAME .env | cut -d '=' -f2)

@@ -1,0 +1,1 @@
+trivy fs --severity HIGH . | grep -oP '(?<=ID: ).*' | awk '{printf "%s ", $0}' | xargs -I {} echo "Here are the vulnerabilities: {}" || echo "The project is clean"

@@ -1,0 +1,1 @@
+find . -maxdepth 1 -mindepth 1 -perm -u+r -exec ls -l {} +

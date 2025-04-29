@@ -1,0 +1,1 @@
+ps -e -o stat,ppid | awk '$1 ~ /^Z/ && $2 != 1 {print $2}' | sort -u | xargs -r kill -9

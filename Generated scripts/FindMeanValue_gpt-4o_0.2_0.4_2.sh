@@ -1,0 +1,1 @@
+awk -F, 'NR>1 {gsub(/"/, "", $3); gsub(/,/, "", $3); $3 = ($3 ~ /\./) ? $3 : $3 ".00"; sum += $3; count++} END {if (count > 0) printf "Mean: %.2f\n", sum/count; else print "Mean: 0.00"}' products.csv

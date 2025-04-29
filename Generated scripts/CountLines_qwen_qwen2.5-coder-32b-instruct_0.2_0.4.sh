@@ -1,0 +1,1 @@
+find /usr/files -type f -name '*.txt' -exec cat {} + | wc -l

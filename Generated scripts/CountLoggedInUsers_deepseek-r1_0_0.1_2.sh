@@ -1,0 +1,1 @@
+last -a | awk '/still logged in/ {print $1}' | sort -u | wc -l

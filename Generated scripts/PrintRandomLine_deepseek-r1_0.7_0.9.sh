@@ -1,0 +1,1 @@
+for i in {1..75}; do echo -n $((RANDOM%2)); done; echo

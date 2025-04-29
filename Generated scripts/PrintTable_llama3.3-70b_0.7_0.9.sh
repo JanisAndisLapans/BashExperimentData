@@ -1,0 +1,1 @@
+join -a 1 -a 2 -e "None" -o auto <(sort GHJ1.txt) <(sort GHJ2.txt) | sed '/^Exe/!d' | (read -r line; echo "$line"; join -a 1 -a 2 -e "None" -o auto <(sort GHJ1.txt) <(sort GHJ2.txt) | sed '/^Exe/d')

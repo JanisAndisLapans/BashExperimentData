@@ -1,0 +1,2 @@
+systemctl show myservice.service -p ExecMainStatus,Result --no-pager | awk -F= '/ExecMainStatus/ {code=$2} /Result/ {result=$2} END {if (code == "") code="unknown"; print "exit code: " code}'
+journalctl -u myservice.service -n 1 --no-pager | grep -oP 'code=exited, status=\K[0-9]+' | awk '{print "exit code: " $1}'

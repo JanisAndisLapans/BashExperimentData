@@ -1,0 +1,1 @@
+ncal -b 5 2013 | awk '/^Mo/ {print $2}' | xargs -I{} date -d "2013-05-{}" +"%Y-%m-%d"

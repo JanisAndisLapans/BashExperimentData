@@ -1,0 +1,1 @@
+trivy fs --severity HIGH --no-progress . 2>&1 | grep VulnerabilityID | cut -d ' ' -f 2 | xargs -n1 | awk '{printf "%s ", $0}' | { IFS= read -r codes; if [ -z "$codes" ]; then echo "The project is clean"; else echo "Here are the vulnerabilities: $codes"; fi }

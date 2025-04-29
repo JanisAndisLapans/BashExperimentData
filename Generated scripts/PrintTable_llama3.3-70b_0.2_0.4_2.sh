@@ -1,0 +1,1 @@
+join -a 1 -a 2 -e "NULL" -o auto <(sort GHJ1.txt) <(sort GHJ2.txt) | (read -r line; [[ $line =~ ^Exe ]] && echo "$line"; join -a 1 -a 2 -e "NULL" -o auto <(sort GHJ1.txt) <(sort GHJ2.txt) | grep -v "^Exe")

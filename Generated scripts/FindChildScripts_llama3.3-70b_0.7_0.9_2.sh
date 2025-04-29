@@ -1,0 +1,1 @@
+strace -f -e execve ./exec.sh 2>&1 | grep execve | awk '{for(i=2; i<=NF; i++) {print $i}}'

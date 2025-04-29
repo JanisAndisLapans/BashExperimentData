@@ -1,0 +1,1 @@
+ln -s /usr/src/*.java .

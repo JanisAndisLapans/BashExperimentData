@@ -1,0 +1,2 @@
+printf '=%.0s' $(seq 1 87)
+echo

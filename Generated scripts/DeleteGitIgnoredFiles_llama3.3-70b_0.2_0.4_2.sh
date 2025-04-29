@@ -1,0 +1,1 @@
+grep -vE "^#" .gitignore | xargs -I {} find . -type f -path "./{}" -delete

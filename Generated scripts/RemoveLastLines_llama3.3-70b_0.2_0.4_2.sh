@@ -1,0 +1,1 @@
+sed -i -e ":a;N;$d;ba" -e "5{h;d};5G;G;$d" data.md

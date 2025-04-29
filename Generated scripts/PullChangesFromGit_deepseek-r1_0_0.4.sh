@@ -1,0 +1,1 @@
+git pull -X ours origin develop

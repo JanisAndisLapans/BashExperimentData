@@ -1,0 +1,1 @@
+ip route get 1.1.1.1 | awk '{for(i=1; i<=NF; i++){if($i=="src"){printf "IP: %s\n", $(i+1); exit}}}'

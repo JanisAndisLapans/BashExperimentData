@@ -1,0 +1,1 @@
+sed -i ':a;N;$!ba;s/\n[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*\n[^\n]*$//' data.md

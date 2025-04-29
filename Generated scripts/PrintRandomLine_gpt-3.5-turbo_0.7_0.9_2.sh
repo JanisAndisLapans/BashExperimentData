@@ -1,0 +1,1 @@
+tr -dc '01' < /dev/urandom | fold -w 75 | head -n 1

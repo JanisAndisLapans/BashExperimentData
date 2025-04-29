@@ -1,0 +1,1 @@
+date -d "first monday of may 2013" +"%Y-%m-%d"

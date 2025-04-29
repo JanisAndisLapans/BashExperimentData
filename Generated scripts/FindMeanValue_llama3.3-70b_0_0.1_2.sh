@@ -1,0 +1,1 @@
+awk -v FS=, '{if ($0 ~ /^[0-9]+,/) {sum+=$2; count++}} END {if (count > 0) print "Mean: " sum/count; else print "No numeric values found"}' products.csv

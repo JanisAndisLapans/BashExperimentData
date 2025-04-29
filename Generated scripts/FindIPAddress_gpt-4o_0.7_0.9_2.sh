@@ -1,0 +1,1 @@
+ip -4 addr show "$(ip route show default | awk '/default/ {print $5}')" | awk '/inet / {print "IP: "$2}' | cut -d/ -f1

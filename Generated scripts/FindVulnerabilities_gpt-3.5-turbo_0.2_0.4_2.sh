@@ -1,0 +1,1 @@
+trivy fs --severity HIGH --no-progress . 2>&1 | grep -E "^\d{4}" | awk '{print $1}' | xargs echo "Here are the vulnerabilities:" || echo "The project is clean"

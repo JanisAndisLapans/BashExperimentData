@@ -1,0 +1,2 @@
+ip -4 addr show | grep -oP '(?<=inet\s)\d+\.\d+\.\d+\.\d+(?=/\d+)' | grep -v '127.0.0.1' | head -n 1 | awk '{print "IP: " $1}'
+ip -4 addr show $(ip route | awk '/default/ {print $5}') | grep -oP '(?<=inet\s)\d+\.\d+\.\d+\.\d+' | head -n 1 | awk '{print "IP: " $1}'

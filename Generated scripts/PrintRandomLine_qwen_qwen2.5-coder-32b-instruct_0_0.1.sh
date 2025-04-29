@@ -1,0 +1,1 @@
+head -c 75 /dev/urandom | tr -dc '01'

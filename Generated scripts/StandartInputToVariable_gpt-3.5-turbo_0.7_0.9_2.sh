@@ -1,0 +1,1 @@
+text=$(awk '{ if ($0 ~ /%/) { print substr($0, 1, index($0, "%")-1); exit } else print $0 }')

@@ -1,0 +1,1 @@
+echo "exit code: $(systemctl show myservice --property=ExecMainStatus | cut -d= -f2)"

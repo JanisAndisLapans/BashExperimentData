@@ -1,0 +1,1 @@
+find /usr/code -maxdepth 1 -type f -name "*.py" -exec md5sum {} + | sort | awk '{print $1}' | uniq -d

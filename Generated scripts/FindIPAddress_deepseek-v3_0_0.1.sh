@@ -1,0 +1,1 @@
+ip -4 addr show | grep -oP '(?<=inet\s)\d+\.\d+\.\d+\.\d+' | head -n 1 | awk '{print "IP: " $1}'

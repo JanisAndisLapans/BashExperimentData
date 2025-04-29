@@ -1,0 +1,1 @@
+ssh "$1" "mysqldump -h localhost -u TEST_USER -pTEST TEST_DB" | gzip -c | gzip -dc | mysql -h localhost -u TEST_USER -pTEST TEST_DB

@@ -1,0 +1,1 @@
+grep -rl "FAIL" /usr/results/ | grep -c "result.log"

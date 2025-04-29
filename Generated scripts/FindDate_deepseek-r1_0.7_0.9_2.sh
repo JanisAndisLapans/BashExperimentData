@@ -1,0 +1,1 @@
+for d in {01..07}; do date -d "2013-05-$d" "+%u %F" 2>/dev/null; done | awk '$1==1{print $2; exit}'

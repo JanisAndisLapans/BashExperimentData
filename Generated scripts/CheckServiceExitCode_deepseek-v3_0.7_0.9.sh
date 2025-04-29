@@ -1,0 +1,1 @@
+systemctl show myservice.service -p ExecMainStatus --value | awk '{print "exit code: " $1}'

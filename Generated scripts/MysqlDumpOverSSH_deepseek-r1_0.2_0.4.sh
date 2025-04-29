@@ -1,0 +1,1 @@
+ssh -C root@"$1" "mysqldump -u TEST_USER --password=TEST TEST_DB" | mysql -u TEST_USER --password=TEST TEST_DB

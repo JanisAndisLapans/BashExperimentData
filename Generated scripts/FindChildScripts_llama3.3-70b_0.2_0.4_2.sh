@@ -1,0 +1,1 @@
+strace -f -e execve ./exec.sh 2>&1 | grep execve | awk '{print $2}' | sed 's/[^a-zA-Z0-9_./-]*//g'

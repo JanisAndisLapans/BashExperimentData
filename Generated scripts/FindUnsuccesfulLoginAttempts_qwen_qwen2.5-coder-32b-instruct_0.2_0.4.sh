@@ -1,0 +1,1 @@
+grep "Failed password" /var/log/auth.log | grep "$(date +%b\ %d)" | awk '{print $(NF-3)}' | sort | uniq -c | awk '$1 >= 3' | wc -l | awk '{print "Users: "$1}'

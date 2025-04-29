@@ -1,0 +1,1 @@
+journalctl -u myservice --no-pager -n 1000 | grep -oP 'Main process exited, code=exited, status=\K\d+' | tail -n 1 | awk '{print "exit code: " $1}'

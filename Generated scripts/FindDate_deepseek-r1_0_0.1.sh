@@ -1,0 +1,1 @@
+LC_ALL=C ncal -M May 2013 | awk '/^Mo/ {print $2}'

@@ -1,0 +1,1 @@
+strace -f -e trace=exec -s 1000 ./exec.sh 2>&1 | grep -Po 'exec[a-z]*\(\K"[^"]+\.sh"' | tr -d '"' | sort -u

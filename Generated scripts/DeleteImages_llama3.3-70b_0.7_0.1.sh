@@ -1,0 +1,1 @@
+find . -type f -regex ".*\(jpg\|jpeg\|png\|gif\|bmp\)$" -delete

@@ -1,0 +1,1 @@
+find . -type f -exec sh -c 'if git check-ignore -q {} 2>/dev/null; then rm {}; fi' \;

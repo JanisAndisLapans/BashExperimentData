@@ -1,0 +1,1 @@
+head -n -5 data.md > data.md.tmp && mv data.md.tmp data.md

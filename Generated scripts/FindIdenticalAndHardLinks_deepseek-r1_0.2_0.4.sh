@@ -1,0 +1,1 @@
+fdupes -rH /usr/files | awk 'BEGIN { RS=""; FS="\n"; OFS=" " } NF>1 { $1=$1; print }'

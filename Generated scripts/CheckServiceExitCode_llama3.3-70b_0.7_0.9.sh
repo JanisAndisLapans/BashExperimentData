@@ -1,0 +1,1 @@
+systemctl show -p ExitStatus myservice | sed 's/ExitStatus=//g' | xargs -I {} echo "exit code: {}"

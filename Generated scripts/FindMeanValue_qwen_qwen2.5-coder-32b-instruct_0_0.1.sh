@@ -1,0 +1,1 @@
+awk -F, 'NR>1 {sum+=$2; count++} END {print "Mean:", sum/count}' products.csv

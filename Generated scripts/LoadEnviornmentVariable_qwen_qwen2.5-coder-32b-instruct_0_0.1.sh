@@ -1,0 +1,1 @@
+USERNAME=$(grep -oP '^USERNAME=\K.*' .env)

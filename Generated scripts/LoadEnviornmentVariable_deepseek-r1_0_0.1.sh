@@ -1,0 +1,1 @@
+source .env && echo "$USERNAME"
